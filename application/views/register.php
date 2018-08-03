@@ -51,7 +51,7 @@
             }
         ?>
 
-        <form action="<?php echo base_url()."index.php/user/RegisterUser"?>" method="post">
+        <form action="<?php echo base_url()."user/RegisterUser"?>" method="post">
             <div class="form-group custom-bottom-margin">
                 <label class="control-label col-sm-4 text-right" for="name">First Name</label>
                 <div class="col-sm-5">
@@ -95,10 +95,20 @@
                 </div>
             </div>
         </form>
+
+        <form action="<?php echo base_url('login/index') ?>" method="post">
+            <div class="form-group custom-bottom-margin">
+                <label class="control-label col-sm-4 text-right"></label>
+                <div class="col-sm-5">
+                    <button class="btn btn-info" type="submit">Login</button>
+                </div>
+            </div>
+        </form>
     </div>
 </div>
 </body>
 <!-- JS -->
+
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </html>
